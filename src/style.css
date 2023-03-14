@@ -1,0 +1,108 @@
+html {
+    background: linear-gradient(180deg, #b8f354, #6af354, #54b3f3, #6d54f3, #d654f3, #f354d1, #f35454);
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: AnimationName 19s ease infinite;
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+
+.panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 150px auto;
+  max-width: 600px;
+  height: 500px;
+  background: #ffffff85;
+  box-shadow: 0 8px 32px 0 #1f26875e;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid #ffffff2e;
+}
+
+.inner {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 450px;
+  scrollbar-width: thin;
+}
+
+.inner::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.inner::-webkit-scrollbar-thumb {
+  background-color: #777; 
+  border-radius: 10px; 
+}
+
+.inner::-webkit-scrollbar-track {
+  background-color: #ddd; 
+  border-radius: 10px; 
+}
+
+form {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+input {
+  width: 530px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid #bebebebb;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.user-self {
+  background: #f0f0f0;
+  border-radius: 10px;padding: 10px;
+  backdrop-filter: blur(10px);
+  max-width: 350px;
+  margin-bottom: 10px;
+  color: #1a5312;
+  margin-left: 5px;
+}
+
+.you {
+  color: #31a520;
+  padding-right: 5px;
+  font-weight: 600;
+}
+
+.friend {
+  background: #d5f2ff;
+  border-radius: 10px;padding: 10px;
+  backdrop-filter: blur(10px);
+  max-width: 350px;
+  margin-bottom: 10px;
+  margin-left: 230px;
+  color: #152266;
+  margin-right: 5px;
+}
+
+.him {
+  color: #2034a5;
+  padding-right: 5px;
+  font-weight: 600;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
